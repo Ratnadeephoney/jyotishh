@@ -1,0 +1,93 @@
+<div class="contact-us-container">
+    <div class="contactus-lr">
+        <div class="cu-left">
+            <div class="left">
+                <div class="cu-chat-call">
+                    <div class="cu-heading">
+                        Contact Us
+                    </div>
+                    <div class="cu-description">
+                        For any questions or assistance navigating the stars,<br>
+                        our cosmic support team is here to guide you. Reach<br>
+                        out to us anytime for clarity on your astrological journey
+                    </div>
+                    <div class="chat-call">
+                        <div class="cc">
+                            <div class="chat">
+                                <div class="logo-text">
+                                    <div class="chat-icon">
+                                        <img class="logo" [src]="'./assets/images/contactus/chat.png'">
+                                    </div>
+                                    <div class="chat-text">Chat with us</div>
+                                </div>
+                            </div>
+                            <div class="call">
+                                <div class="logo-text">
+                                    <div class="call-icon">
+                                        <img class="logo" [src]="'./assets/images/contactus/call.png'">
+                                    </div>
+                                    <div class="call-text">Contact us</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cu-right">
+            <div class="right">
+                <div class="heading">
+                    Fill this & we'll get back to you through email
+                </div>
+                <div class="contactus-form">
+                    <form [formGroup]="contactusForm" (ngSubmit)="onSubmit()">
+                        <div class="name-container">
+                           <div class="name">
+                             <div class="firstname">
+                                <input type="'text'" placeholder="First name" autocomplete="off" id="email"  formControlName="firstname">
+                             </div>
+                             <div class="lastname">
+                                <input [type]="'text'" placeholder="Last name" autocomplete="off" id="password"  formControlName="lastname">
+                             </div>
+                           </div>
+                        </div>
+                        <div class="email-container">
+                            <div class="email">
+                                <div class="icon">
+                                    <img  src="./assets/images/login/email.png">
+                                 </div>
+                                 <div class="email-inp">
+                                    <input [type]="'email'" placeholder="Your Email" autocomplete="off" id="password"  formControlName="email">
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="phonenumber-container">
+                            <div class="phonenumber">
+                                <div class="country-code">
+                                   +91
+                                 </div>
+                                 <div class="phonenumber-inp">
+                                    <input [type]="'email'" placeholder="Phone number" autocomplete="off" id="password"  formControlName="phonenumber">
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="help-container">
+                            <div class="help">
+                                 <div class="help-inp">
+                                    <textarea #helpt maxlength="120" placeholder="How can we help you?" autocomplete="off" id="password" formControlName="help"></textarea>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="help-count">
+                            <div>{{helpt.value.length}}/120</div>
+                         </div>
+                        <div class="submit">
+                            <button type="submit" [disabled]="contactusForm.invalid">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

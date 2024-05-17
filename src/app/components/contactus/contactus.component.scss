@@ -1,0 +1,274 @@
+.contact-us-container {
+    font-family: sans-serif;
+
+    .contactus-lr {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: calc(100vh - 78px);
+
+        .cu-left {
+            // height:100vh;
+            // border:2px solid red;
+        }
+
+        .cu-right {
+            // height:100vh;
+            // border:2px solid green;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cu-chat-call {
+            width: 80%;
+            // border:2px solid green;
+        }
+
+        .cu-heading {
+            font-size: 35px;
+            padding: 10px 0px;
+        }
+
+        .cu-description {
+            font-size: 18px;
+        }
+
+        .chat-call {
+            .cc {
+                display: flex;
+                margin: 20px 0px;
+
+                .chat {
+                    width: 200px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .logo-text {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 40% 60%;
+                        margin: 10px;
+
+                        .chat-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .chat-text {
+                            display: flex;
+                            align-items: center;
+                            margin-left: -10px;
+                        }
+                    }
+
+                    .logo {
+                        width: 20px;
+                        height: 15px;
+                        filter: invert(1);
+                    }
+                }
+
+                .call {
+                    width: 200px;
+                    margin-left: 30px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 50px;
+
+                    .logo-text {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 40% 60%;
+                        margin: 10px;
+
+                        .call-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .call-text {
+                            display: flex;
+                            align-items: center;
+                            margin-left: -10px;
+                        }
+                    }
+
+                    .logo {
+                        width: 20px;
+                        height: 18px;
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        border: 2px solid lightgray;
+        border-radius: 30px;
+        width: 400px;
+        height: 500px;
+
+        .heading {
+            margin: 30px;
+            font-size: 25px;
+        }
+
+        .contactus-form {
+            .name-container {
+                display: flex;
+                justify-content: center;
+
+                .name {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+
+                    .firstname,
+                    .lastname {
+
+                        input //[type="text"]
+
+                            {
+                            padding: 8px;
+                            border-radius: 30px;
+                            outline: none;
+                            border: 2px solid gray;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+
+            .email-container {
+                border: 2px solid gray;
+                margin: 10px;
+                border-radius: 30px;
+
+                .email {
+                    display: grid;
+                    grid-template-columns: 12% 88%;
+
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .email-inp {
+                        input {
+                            width: 90%;
+                            padding: 8px;
+                            border-radius: 30px;
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .phonenumber-container {
+                border: 2px solid gray;
+                margin: 10px;
+                border-radius: 30px;
+
+                .phonenumber {
+                    display: grid;
+                    grid-template-columns: 15% 85%;
+
+                    .country-code {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: gray;
+                        border-right: 2px solid gray;
+
+                    }
+
+                    .phonenumber-inp {
+                        input {
+                            width: 90%;
+                            padding: 8px;
+                            border-radius: 30px;
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .help-container {
+                // border: 2px solid gray;
+                // margin: 10px;
+                // border-radius: 30px;
+                height: 90px;
+
+                .help {
+                    .help-inp {
+                        textarea {
+                            resize: none;
+                            width: 355px;
+                            height: 90px;
+                            border-radius: 30px;
+                            outline: none;
+                            border: 2px solid gray;
+                            max-height: 120px;
+                            max-width: 100%;
+                            margin:10px;
+                            padding: 10px;
+                            font-size:17px;
+                        }
+                    }
+                }
+                
+            }
+            .help-count{
+                float: right;
+                margin-right: 70px;
+                margin-top: 10px;
+                font-size: 14px;
+                div{
+                    position: absolute;
+                    z-index: 1000;
+                }
+            }
+            .submit
+            {
+                margin-top: 60px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                button{
+                    width: 100%;
+                    margin: 10px;
+                    border-radius: 30px;
+                    height: 35px;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

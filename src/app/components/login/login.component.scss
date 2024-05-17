@@ -1,0 +1,229 @@
+.login-container{
+    // height: calc(100vh - 20px);
+    height:100%;
+    width:100%;
+    background-color: black;
+    font-family: sans-serif;
+    .login-make-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        .login-lr
+        {
+            width: 70%;
+            // height: calc(100vh - 20px);
+            // calc(100vh - 20px);
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+           
+            .login-left
+            {
+                
+                // height: calc(100vh - 20px);
+                // calc(100vh - 20px);
+                background-color: white;
+                background-size: cover;
+                .logo-left{
+                    padding:20px;
+                    width:130px;
+                    .logo-text{
+                        display: grid;
+                        grid-template-columns: 45px 85px;
+                        .logo{
+                            width:30px;
+                        }
+                        .text{
+                            font-size:25px;
+                        }
+                    }
+                }
+                .heading-middle
+                {
+                    text-align: center;
+                    font-size: 35px;
+                    // font-weight: 600;
+                }
+                .ll{
+                    height:calc(100vh - 20px);
+                    // 770px;
+                }
+            }
+            .login-right{
+                background-image: url("../../../assets/images/login/login-right-bg.png");
+                background-size: cover; 
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .login-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:60px;
+    }
+    .email-container,.password-container{
+        border:2px solid lightgray;
+        border-radius: 50px;
+        padding:10px;
+        width:350px;
+        margin-top:20px;
+        .email{
+            display: grid;
+            grid-template-columns: 40px 300px;
+            .icon{
+                img{
+                    width:20px;
+                    position: absolute;
+                    margin-top: 1px;
+                    margin-left: 15px;
+                }
+            }
+            .email-inp{
+                input[type="email"]{
+                    border: none;
+                    width: 100%;
+                    /* background-color: red !important; */
+                    outline: none;
+                    background-color: white !important;
+                }
+            }
+        }
+        .password{
+            display: grid;
+            grid-template-columns: 40px 270px 30px;
+            .icon{
+                img{
+                    width:20px;
+                    position: absolute;
+                    margin-top: 1px;
+                    margin-left: 15px;
+                }
+            }
+            .see{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                img{
+                    width:20px;
+                    position: absolute;
+                    margin-top: 1px;
+                    
+                }
+            }
+            .password-inp{
+                input[type="password"],input[type="text"]{
+                    border: none;
+                    width: 100%;
+                    /* background-color: red !important; */
+                    outline: none;
+                    background-color: white !important;
+                }
+            }
+        }
+    }
+    .submit{
+        text-align: center;
+        margin-top:50px;
+        button{
+            padding:10px;
+            width:380px;
+            margin-top:20px;
+            background-color: rgb(39, 39, 66);
+            border-radius: 50px;
+            color:whitesmoke;
+        }
+    }
+    .or-hline{
+        width: 100%;
+        margin-top:50px;
+        display: flex;
+        justify-content: center;
+        .line{
+            width:350px;
+            text-align: center;
+            border-bottom:2px solid lightgray;
+        }
+        .or{
+            display: flex;
+            justify-content: center;
+            font-size:11px;
+            color:gray;
+            .lor{
+                position: absolute;
+                margin-top:-5px;
+                width:40px;
+                height:30px;
+                background-color: white;
+
+            }
+        }
+    }
+
+    .google-apple{
+        width:100%;
+        margin-top:35px;
+        display: flex;
+        justify-content: center;
+        .ga-container{
+            width:400px;
+            display: grid;
+            grid-template-columns: 45% 10% 45%;
+
+            .google{
+                width: 180px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                border:2px solid lightgray;
+                border-radius: 50px;
+                .g-img{
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    height:25px;
+                    width:25px;
+                }
+            }
+            .apple{
+                width: 180px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                border:2px solid lightgray;
+                border-radius: 50px;
+                .a-img{
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    height:25px;
+                    width:25px;
+                }
+            }
+        }
+    }
+    .forget-password{
+        display: flex;
+        justify-content: center;
+        font-size:12px;
+        div{
+            width: 350px;
+            text-align: end;
+            margin-top:5px;
+        }
+    }
+
+    .noaccount-signup{
+        margin-top:150px;
+        display: flex;
+        justify-content: center;
+        font-size:13px;
+    }
+    
+}
+
+// login-left
