@@ -26,7 +26,7 @@
                                     <div class="call-icon">
                                         <img class="logo" [src]="'./assets/images/contactus/call.png'">
                                     </div>
-                                    <div class="call-text">Contact us</div>
+                                    <div class="call-text">Call us</div>
                                 </div>
                             </div>
                             
@@ -38,7 +38,9 @@
         <div class="cu-right">
             <div class="right">
                 <div class="heading">
-                    Fill this & we'll get back to you through email
+                    <div>
+                        Fill this & we'll get back to you through email
+                    </div>
                 </div>
                 <div class="contactus-form">
                     <form [formGroup]="contactusForm" (ngSubmit)="onSubmit()">

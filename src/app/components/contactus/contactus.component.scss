@@ -1,5 +1,5 @@
 .contact-us-container {
-    font-family: sans-serif;
+    // font-family: sans-serif;
 
     .contactus-lr {
         display: grid;
@@ -35,12 +35,12 @@
         }
 
         .cu-heading {
-            font-size: 35px;
+            font-size: 45px;
             padding: 10px 0px;
         }
 
         .cu-description {
-            font-size: 18px;
+            font-size: 24px;
         }
 
         .chat-call {
@@ -50,7 +50,7 @@
 
                 .chat {
                     width: 200px;
-                    background-color: black;
+                    background-color: #3d3745;
                     color: white;
                     border-radius: 50px;
                     display: flex;
@@ -61,7 +61,7 @@
                         width: 100%;
                         display: grid;
                         grid-template-columns: 40% 60%;
-                        margin: 10px;
+                        margin: 13px;
 
                         .chat-icon {
                             display: flex;
@@ -79,14 +79,14 @@
                     .logo {
                         width: 20px;
                         height: 15px;
-                        filter: invert(1);
+                        filter: invert(1) brightness(2);
                     }
                 }
 
                 .call {
                     width: 200px;
                     margin-left: 30px;
-                    background-color: black;
+                    background-color: #3d3745;
                     color: white;
                     border-radius: 50px;
 
@@ -94,7 +94,7 @@
                         width: 100%;
                         display: grid;
                         grid-template-columns: 40% 60%;
-                        margin: 10px;
+                        margin: 13px;
 
                         .call-icon {
                             display: flex;
@@ -112,7 +112,7 @@
                     .logo {
                         width: 20px;
                         height: 18px;
-                        filter: invert(1);
+                        filter: invert(1) brightness(2);
                     }
                 }
             }
@@ -122,12 +122,17 @@
     .right {
         border: 2px solid lightgray;
         border-radius: 30px;
-        width: 400px;
-        height: 500px;
+        width: 500px;
+        height: 600px;
 
         .heading {
-            margin: 30px;
-            font-size: 25px;
+            margin: 50px 30px 25px 30px;
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            div{
+                width:400px;
+            }
         }
 
         .contactus-form {
@@ -143,13 +148,13 @@
                     .lastname {
 
                         input //[type="text"]
-
-                            {
-                            padding: 8px;
+                        {
+                            width: 190px;
+                            padding: 13px;
                             border-radius: 30px;
                             outline: none;
                             border: 2px solid gray;
-                            margin: 10px;
+                            margin: 0px 6px;
                         }
                     }
                 }
@@ -157,7 +162,8 @@
 
             .email-container {
                 border: 2px solid gray;
-                margin: 10px;
+                margin: 22px;
+                padding:5px;
                 border-radius: 30px;
 
                 .email {
@@ -189,7 +195,8 @@
 
             .phonenumber-container {
                 border: 2px solid gray;
-                margin: 10px;
+                margin: 22px;
+                padding: 5px;
                 border-radius: 30px;
 
                 .phonenumber {
@@ -222,12 +229,14 @@
                 // margin: 10px;
                 // border-radius: 30px;
                 height: 90px;
+                display: flex;
+                justify-content: center;
 
                 .help {
                     .help-inp {
                         textarea {
                             resize: none;
-                            width: 355px;
+                            width: 430px;
                             height: 90px;
                             border-radius: 30px;
                             outline: none;
@@ -244,7 +253,7 @@
             }
             .help-count{
                 float: right;
-                margin-right: 70px;
+                margin-right: 90px;
                 margin-top: 10px;
                 font-size: 14px;
                 div{
@@ -261,11 +270,12 @@
 
                 button{
                     width: 100%;
-                    margin: 10px;
+                    margin: 20px;
                     border-radius: 30px;
-                    height: 35px;
-                    background-color: black;
+                    height: 40px;
+                    background-color: #3d3745;
                     color: white;
+                    font-size:20px;
                 }
             }
         }
