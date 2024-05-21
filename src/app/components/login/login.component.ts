@@ -25,8 +25,12 @@ export class LoginComponent implements OnInit{
 
   gotoHome(){
     this.router.navigate(["/dashboard"], {relativeTo:this.route});
+    let Jyotishhbody:any = document.getElementsByClassName('Jyotishh-body')
+    if(Jyotishhbody[0]){ Jyotishhbody[0].style = `overflow-x:hidden;`}
   }
   ngOnInit() {
+    let Jyotishhbody:any = document.getElementsByClassName('Jyotishh-body')
+    if(Jyotishhbody[0]){ Jyotishhbody[0].style = `overflow:hidden;`}
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]

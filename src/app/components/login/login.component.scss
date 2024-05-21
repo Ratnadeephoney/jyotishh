@@ -2,9 +2,13 @@
     // height: calc(100vh - 20px);
     height:100%;
     width:100%;
+
     // margin:0px -3px;
-    // style="margin:0px -3px; overflow: hidden;"
-    background-color: black;
+    // border:2p solid red;
+    // margin:0px 3px; 
+    overflow: hidden;
+    // // background-color: black;
+    // position:absolute;
     // font-family: sans-serif;
     .login-make-center{
         display: flex;
@@ -61,6 +65,8 @@
                 background-image: url("../../../assets/images/login/login-right-bg.png");
                 background-size: cover; 
                 background-repeat: no-repeat;
+                // border:3px solid black;
+                overflow: hidden !important;
             }
         }
     }

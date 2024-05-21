@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
     // let mre:any = document.getElementsByClassName('main-root-element')
     // if(mre[0])
     //   {
-    //     mre[0].style.height = `${window.innerHeight - 20}px`
+    //     mre[0].style.height = `${window.innerHeight}px`
     //     mre[0].style.border = "2px solid green"
     //   }
   }

@@ -1,43 +1,45 @@
-<header>
-    <div class="home-header">
-        <div class="header">
-            <div class="left-h">
-                <div class="lh">
-                    <div class="logo" (click)="gotoHoe()">
-                        <div class="logo-text">
-                            <div>
-                                <img class="logo" [src]="'./assets/images/app-logo.png'">
-                            </div>
-                            <div class="text">
-                                Jyotishh
+<div class="home-container">
+    <header>
+        <div class="home-header">
+            <div class="header">
+                <div class="left-h">
+                    <div class="lh">
+                        <div class="logo" (click)="gotoHoe()">
+                            <div class="logo-text">
+                                <div>
+                                    <img class="logo" [src]="'./assets/images/app-logo.png'">
+                                </div>
+                                <div class="text">
+                                    Jyotishh
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="right-h">
-                <div class="rh">
-                    <div class="nav-header">
-                        <div class="contactus" (click)="pageNavigation('/home/contactus')">Contact us</div>
-                        <div class="languages">
-                            <div class="popup" (click)="languagePopup()">Languages
-                                <div class="popuptext" id="myPopup">
-                                    <div class="lnges" *ngFor="let lnge of ['English','Kannada','Telugu']"> {{lnge}}
-                                        <!-- <div class="lnge">
-                                            {{lnge}}
-                                        </div> -->
+                <div class="right-h">
+                    <div class="rh">
+                        <div class="nav-header">
+                            <div class="contactus" (click)="pageNavigation('/home/contactus')">Contact us</div>
+                            <div class="languages">
+                                <div class="popup" (click)="languagePopup()">Languages
+                                    <div class="popuptext" id="myPopup">
+                                        <div class="lnges" *ngFor="let lnge of ['English','Kannada','Telugu']"> {{lnge}}
+                                            <!-- <div class="lnge">
+                                                {{lnge}}
+                                            </div> -->
+                                        </div>
                                     </div>
-                                </div>
-                              </div>
+                                  </div>
+                            </div>
+                            <div class="login" (click)="pageNavigation('/login')">Login</div>
                         </div>
-                        <div class="login" (click)="pageNavigation('/login')">Login</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</header>
-<main>
-    <router-outlet></router-outlet>
-</main>
+    
+    </header>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</div>

@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit(): void {
     // this.gotoHoe()
+    let Jyotishhbody:any = document.getElementsByClassName('Jyotishh-body')
+    if(Jyotishhbody[0]){ Jyotishhbody[0].style = `overflow-x:hidden;`}
   }
   gotoHoe(){
     this.router.navigate(["/dashboard"], {relativeTo:this.route});
