@@ -3,7 +3,7 @@
         <div class="login-lr">
             <div class="login-left">
                <div class="ll">
-                <div class="logo-left" (click)="gotoHoe()">
+                <div class="logo-left" (click)="gotoHome()">
                     <div class="logo-text">
                         <div>
                             <img class="logo" [src]="'./assets/images/app-logo.png'">
@@ -13,78 +13,80 @@
                         </div>
                     </div>
                 </div>
-                <div class="heading-middle">
-                    Login to your Account
-                </div>
-                <div class="login-form">
-                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-                        <div class="email-container">
-                           <div class="email">
-                             <div class="icon">
-                                <img  [src]="'./assets/images/login/email.png'">
+                <div class="login-form-container">
+                    <div class="heading-middle">
+                        Login to your Account
+                    </div>
+                    <div class="login-form">
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <div class="email-container">
+                               <div class="email">
+                                 <div class="icon">
+                                    <img  [src]="'./assets/images/login/email.png'">
+                                 </div>
+                                 <div class="email-inp">
+                                    <input type="email" placeholder="Email" autocomplete="off" id="email"  formControlName="email">
+                                 </div>
+                                
+                                <!-- <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+                                    <small *ngIf="loginForm.get('email').errors.required">Email is required</small>
+                                    <small *ngIf="loginForm.get('email').errors.email">Invalid email</small>
+                                </div> -->
+                               </div>
+                            </div>
+                            <div class="password-container">
+                                <div class="password">
+                                    <div class="icon">
+                                        <img  [src]="'./assets/images/login/password.png'">
+                                     </div>
+                                     <div class="password-inp">
+                                        <input [type]="passwordtype" placeholder="Password" autocomplete="off" id="password"  formControlName="password">
+                                     </div>
+                                    <div class="see" >
+                                        <img (mousedown)="showpassword()" (mouseup)="hidepassword()" [src]="'./assets/images/login/seepassword.png'">
+                                    </div>
+                                </div>
+                                <!-- <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
+                                    <small *ngIf="loginForm.get('password').errors.required">Password is required</small>
+                                    <small *ngIf="loginForm.get('password').errors.minlength">Password must be at least 6 characters</small>
+                                </div> -->
+                            </div>
+                            <div class="forget-password">
+                                <div> Forget Password?</div>
                              </div>
-                             <div class="email-inp">
-                                <input type="email" placeholder="email" autocomplete="off" id="email"  formControlName="email">
-                             </div>
-                            
-                            <!-- <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
-                                <small *ngIf="loginForm.get('email').errors.required">Email is required</small>
-                                <small *ngIf="loginForm.get('email').errors.email">Invalid email</small>
-                            </div> -->
-                           </div>
+                            <div class="submit">
+                                <button type="submit" [disabled]="loginForm.invalid">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="or-hline">
+                        <div class="line">
+                            <div class="or">
+                                <div class="lor">OR</div>
+                            </div>
                         </div>
-                        <div class="password-container">
-                            <div class="password">
-                                <div class="icon">
-                                    <img  [src]="'./assets/images/login/password.png'">
-                                 </div>
-                                 <div class="password-inp">
-                                    <input [type]="passwordtype" placeholder="password" autocomplete="off" id="password"  formControlName="password">
-                                 </div>
-                                <div class="see" >
-                                    <img  (click)="seepassword()" [src]="'./assets/images/login/seepassword.png'">
+                    </div>
+                    <div class="google-apple">
+                        <div class="ga-container">
+                            <div class="google">
+                                <div class="g-img">
+                                    <img [src]="'./assets/images/login/google.png'">
                                 </div>
                             </div>
-                            <!-- <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
-                                <small *ngIf="loginForm.get('password').errors.required">Password is required</small>
-                                <small *ngIf="loginForm.get('password').errors.minlength">Password must be at least 6 characters</small>
-                            </div> -->
-                        </div>
-                        <div class="forget-password">
-                            <div> Forget Password?</div>
-                         </div>
-                        <div class="submit">
-                            <button type="submit" [disabled]="loginForm.invalid">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="or-hline">
-                    <div class="line">
-                        <div class="or">
-                            <div class="lor">OR</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="google-apple">
-                    <div class="ga-container">
-                        <div class="google">
-                            <div class="g-img">
-                                <img [src]="'./assets/images/login/google.png'">
-                            </div>
-                        </div>
-                        <div></div>
-                        <div class="apple">
-                            <div class="a-img">
-                                <img [src]="'./assets/images/login/apple.png'">
+                            <div></div>
+                            <div class="apple">
+                                <div class="a-img">
+                                    <img [src]="'./assets/images/login/apple.png'">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="noaccount-signup">
-                    <div>
-                        Don't have an Account? Sign UP
-                    </div>
-                </div>           
+                    <div class="noaccount-signup">
+                        <div>
+                            Don't have an Account? <span>Sign Up</span>
+                        </div>
+                    </div>     
+                </div>      
                </div>             
             </div>
             <div class="login-right"></div>

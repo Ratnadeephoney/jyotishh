@@ -9,6 +9,8 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component'; // Import ReactiveFormsModule
+import { CommonModule } from '@angular/common';
+import { CategoriesComponent } from './components/categories/categories.component';  // Import CommonModule
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     LoginComponent,
     HomeComponent,
     ContactusComponent,
-    DashboardComponent
+    DashboardComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,
+    // CommonModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

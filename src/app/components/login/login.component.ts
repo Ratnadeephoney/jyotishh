@@ -13,9 +13,17 @@ export class LoginComponent implements OnInit{
   seepassword(){
     this.passwordtype =="password"?this.passwordtype = "text":this.passwordtype = "password"
   }
+  showpassword()
+  {
+    this.passwordtype = "text"
+  }
+  hidepassword()
+  {
+    this.passwordtype = "password"
+  }
   constructor(private formBuilder: FormBuilder,private route: ActivatedRoute, private router: Router) { }
 
-  gotoHoe(){
+  gotoHome(){
     this.router.navigate(["/dashboard"], {relativeTo:this.route});
   }
   ngOnInit() {
@@ -28,6 +36,7 @@ export class LoginComponent implements OnInit{
   onSubmit() {
     if (this.loginForm.valid) {
       console.log('Form submitted:', this.loginForm.value);
+      this.gotoHome()
       // Implement your login logic here
     } else {
       console.log('Invalid form');

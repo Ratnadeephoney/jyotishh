@@ -1,1 +1,49 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+
+    <div class="main-dashboard">
+        <div>
+            <div class="logo-text">
+                <img width="60px" height="60px" src="assets/images/app-logo.png">
+    
+                <h1>What do you want to know about?</h1>
+    
+            </div>
+
+            <div  *ngFor="let j of jyothish;let i=index;">
+                    <div class="{{j['classes']}}">
+                        <div  *ngFor="let ji of j['list']">
+                            <div class="{{ji['classes']}}">
+                                <div class="image-category" (click)="gotoCategory(ji)">
+                                    <div class="i-c">
+                                        <img style="width:60px;height:60px;" [src]="ji['img']">
+                                    </div>
+                                    <div class="t-c">
+                                        <div>
+                                            {{ji['name']}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div>
+                <footer class="footer">
+    
+                    <span class="footer-span">
+    
+                        <input type="text" placeholder="Ask your question" class="form-control question-input" />
+    
+                        <button class="enter-button">Enter</button>
+    
+                    </span>
+    
+                </footer>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>

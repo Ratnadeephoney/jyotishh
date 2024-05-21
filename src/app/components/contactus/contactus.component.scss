@@ -208,8 +208,18 @@
                         justify-content: center;
                         align-items: center;
                         color: gray;
-                        border-right: 2px solid gray;
+                        // border-right: 2px solid gray;
 
+                    }
+                    .clp{
+                        position: relative;
+                        div{
+                            height: 44px;
+                            border-right: 2px solid gray;
+                            position: absolute;
+                            margin-top: -22px;
+                            margin-left: 18px;
+                        }
                     }
 
                     .phonenumber-inp {
@@ -238,7 +248,7 @@
                             resize: none;
                             width: 430px;
                             height: 90px;
-                            border-radius: 30px;
+                            border-radius: 20px;
                             outline: none;
                             border: 2px solid gray;
                             max-height: 120px;
@@ -246,6 +256,7 @@
                             margin:10px;
                             padding: 10px;
                             font-size:17px;
+                            font-family: 'Nunito Sans';
                         }
                     }
                 }

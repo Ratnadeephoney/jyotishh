@@ -19,4 +19,9 @@ export class HomeComponent implements OnInit {
   {
     this.router.navigate([page], {relativeTo:this.route});
   }
+
+  languagePopup() {
+    let popup:any = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
 }
