@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit{
       "classes":"category",
       "list":[
         {"classes":"categoryi","name":"Marriage","img":"assets/images/Astrology App-33.png"},
-        {"classes":"categoryi","name":"Buisness","img":"assets/images/Astrology App-34.png"},
+        {"classes":"categoryi","name":"Business","img":"assets/images/Astrology App-34.png"},
         {"classes":"categoryi","name":"Other","img":"assets/images/Astrology App-35.png"}
       ]
     }

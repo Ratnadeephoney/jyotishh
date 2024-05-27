@@ -14,168 +14,171 @@
     </div>
 
     <div>
+
+        <div class="ec-container">
+            <div class="account-details" *ngIf="this.content == 'account-details'">
+                <div class="acc">
+                    <h2>Account Details</h2>
+                </div>
+                <hr class="hr">
+                <form class="all">
+                    <div class="one">
+                        <div class="name">
+                            <label for="fullname">Full Name</label>
+                            <br>
+                            <input type="text" id="name">
+                        </div>
+    
+                        <div class="email">
+                            <label for="email">Email ID</label>
+                            <br>
+                            <input type="email" id="mail">
+                        </div>
+                    </div>
+    
+                    <div class="two">
+                        <div class="birth">
+                            <label for="birth">Birth Date</label>
+                            <br>
+                            <input type="date" id="birth">
+                        </div>
+                        <div class="btime">
+                            <label for="btime">Birth Time</label>
+                            <br>
+                            <input type="time" id="btime">
+                        </div>
+                        <div class="zodiac">
+                            <label for="Zodiac">Zodiac Sign</label>
+                            <br>
+                            <input type="text" id="zodiac">
+                        </div>
+                    </div>
+                </form>
+    
+            </div>
+            <div *ngIf="this.content == 'generate-free-horoscope'">
+    
+                <div>
+                    <div class="container">
+    
+                        <section class="content">
+    
+                            <div class="horoscope" >
+                                <div class="horo-content">
+                                    <span> {{category[dashboardToeducation['name']][h_p]}} </span>
+                                </div>
+                            </div>
+                        
+                        </section>
+    
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="content == 'talk-to-our-specialist'" class="specialist-profile">
+    
+                <div class="content-2">
+    
+                    <div class="image-section">
+    
+                        <img src="assets/images/Astrology App-37.png" alt="Card">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="details-section">
+    
+                    <span class="GetinTouch">Get in Touch with the Specialist</span>
+    
+                    <div class="info">
+    
+                        <div style="display: flex;">
+    
+    
+                            <div class="icon-container-full">
+                                <img src="../assets/images/Profile.png" class="video-icon-full">
+                            </div>
+    
+                            <span class="info-spans-classes">
+    
+                                Full Name <br>Santosh Kumar
+    
+                            </span>
+    
+                        </div>
+    
+                        <div style="display: flex;margin-left: 7rem;">
+    
+    
+                            <div class="icon-container-language">
+                                <img src="../assets/images/Astrology App-38.png"
+                                    class="video-icon-language">
+                            </div>
+    
+                            <span class="info-spans-classes">
+    
+                                Languages <br> English, Kannada
+    
+                            </span>
+    
+                        </div>
+    
+                        <div style="display: flex;padding: 45px 0px 0px 0px;">
+    
+    
+                            <div class="icon-container-exp">
+                                <img src="../assets/images/Astrology App-39.png" class="video-icon-exp">
+                            </div>
+    
+                            <span class="info-spans-classes">
+    
+                                Experience <br> 18 Years
+    
+                            </span>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="contact-methods">
+    
+    
+    
+                        <div class="icon-container-email">
+                            <img src="assets/images/Astrology App-40.png" class="video-icon-email">
+                        </div>
+    
+                        <button class="contact-btn"> Live Chat</button>
+    
+                        <img src="assets/images/Astrology App-41.png" class="contact-methods-images">
+    
+                        <button class="contact-btn">Voice Call</button>
+    
+    
+                        <div class="icon-container">
+                            <img src="assets/images/Astrology App-42.png" class="video-icon">
+                        </div>
+    
+    
+                        <button class="contact-btn"> Video Call</button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
         
-        <div class="account-details" *ngIf="this.content == 'account-details'">
-            <div class="acc">
-                <h2>Account Details</h2>
+            <!-- <button type="button" class="generate-btn">Generate Free Horoscope</button> -->
+
+            <div style="display: flex;justify-content: center;align-items: center;">
+
+                <button (click)="stepsToContact()" class="get-parihara {{content == 'talk-to-our-specialist'?'btoh':''}}">
+                    {{steps_to_contact}}
+                </button>
+    
             </div>
-            <hr class="hr">
-            <form class="all">
-                <div class="one">
-                    <div class="name">
-                        <label for="fullname">Full Name</label>
-                        <br>
-                        <input type="text" id="name">
-                    </div>
-
-                    <div class="email">
-                        <label for="email">Email ID</label>
-                        <br>
-                        <input type="email" id="mail">
-                    </div>
-                </div>
-
-                <div class="two">
-                    <div class="birth">
-                        <label for="birth">Birth Date</label>
-                        <br>
-                        <input type="date" id="birth">
-                    </div>
-                    <div class="btime">
-                        <label for="btime">Birth Time</label>
-                        <br>
-                        <input type="time" id="btime">
-                    </div>
-                    <div class="zodiac">
-                        <label for="Zodiac">Zodiac Sign</label>
-                        <br>
-                        <input type="text" id="zodiac">
-                    </div>
-                </div>
-            </form>
-
-        </div>
-        <div *ngIf="this.content == 'generate-free-horoscope'">
-
-            <div>
-                <div class="container">
-
-                    <section class="content">
-
-                        <div class="horoscope" >
-
-                            <span> {{category[dashboardToeducation['name']][h_p]}} </span>
-
-                        </div>
-                    
-                    </section>
-
-                </div>
-            </div>
-        </div>
-        <div *ngIf="content == 'talk-to-our-specialist'" class="specialist-profile">
-
-            <div class="content-2">
-
-                <div class="image-section">
-
-                    <img src="assets/images/Astrology App-37.png" alt="Card">
-
-                </div>
-
-            </div>
-
-            <div class="details-section">
-
-                <span class="GetinTouch">Get in Touch with the Specialist</span>
-
-                <div class="info">
-
-                    <div style="display: flex;">
-
-
-                        <div class="icon-container-full">
-                            <img src="../assets/images/Profile.png" class="video-icon-full">
-                        </div>
-
-                        <span class="info-spans-classes">
-
-                            Full Name <br>Santosh Kumar
-
-                        </span>
-
-                    </div>
-
-                    <div style="display: flex;margin-left: 7rem;">
-
-
-                        <div class="icon-container-language">
-                            <img src="../assets/images/Astrology App-38.png"
-                                class="video-icon-language">
-                        </div>
-
-                        <span class="info-spans-classes">
-
-                            Languages <br> English, Kannada
-
-                        </span>
-
-                    </div>
-
-                    <div style="display: flex;padding: 45px 0px 0px 0px;">
-
-
-                        <div class="icon-container-exp">
-                            <img src="../assets/images/Astrology App-39.png" class="video-icon-exp">
-                        </div>
-
-                        <span class="info-spans-classes">
-
-                            Experience <br> 18 Years
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-methods">
-
-
-
-                    <div class="icon-container-email">
-                        <img src="assets/images/Astrology App-40.png" class="video-icon-email">
-                    </div>
-
-                    <button class="contact-btn"> Live Chat</button>
-
-                    <img src="assets/images/Astrology App-41.png" class="contact-methods-images">
-
-                    <button class="contact-btn">Voice Call</button>
-
-
-                    <div class="icon-container">
-                        <img src="assets/images/Astrology App-42.png" class="video-icon">
-                    </div>
-
-
-                    <button class="contact-btn"> Video Call</button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- <button type="button" class="generate-btn">Generate Free Horoscope</button> -->
-
-        <div style="display: flex;justify-content: center;align-items: center;">
-
-            <button (click)="stepsToContact()" class="get-parihara">
-                {{steps_to_contact}}
-            </button>
-
-        </div>
+        
 
         <footer class="footer" *ngIf="this.stc != 3">
 
