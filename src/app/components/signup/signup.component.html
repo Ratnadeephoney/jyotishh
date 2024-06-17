@@ -1,0 +1,28 @@
+<ng-template #myTemplate let-form="form">
+        <form [formGroup]="form['fg']" (ngSubmit)="onSubmit(form)">
+            <div class="heading">
+                {{form['heading']}}
+            </div>
+            <div class="{{fcn?.length>1?'di':''}}" *ngFor="let fcn of form['fcns'];let i=index">
+               <div class="{{fcn?.length>1?'':'si'}}"  *ngFor="let n of fcn;let j=index">
+                    <input class="{{j==0?'mlr':'mrl'}}" type="text" [placeholder]="n.ph" [formControlName]="n.fcn" >
+                </div>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+  </ng-template>
+<div class="sigup-container">
+    <div  class="client signup-background signup-bg-left">
+        <div class="scc child-content">
+                    <ng-container *ngTemplateOutlet="myTemplate; context: {form:{fg:this.clientLogin,heading:'CLIENT LOGIN',fcns:fcns['clientLogin']} }"></ng-container>
+               
+        </div>
+    </div>
+    <div class="astrologer signup-background signup-bg-right">
+        <div  class="sca child-content">
+            <ng-container *ngTemplateOutlet="myTemplate; context: {form:{fg:this.astrologerLogin,heading:'ASTROLOGER LOGIN',fcns:fcns['astrologerLogin']} }"></ng-container>
+        </div>
+    </div>
+</div>

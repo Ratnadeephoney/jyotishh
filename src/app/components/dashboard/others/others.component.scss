@@ -1,0 +1,35 @@
+.enter-button{
+    padding: 7px 40px 7px 40px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background: #3d3745;
+    color: white;
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.otherQuestion{
+    padding-top: 25px;
+    text-align: center;
+}
+
+.textareaSection{
+    display: flex;justify-content: center;align-items: center;
+}
+
+.textareaInput{
+    width: 22rem;height: 7rem;padding: 14px;border-radius: 10px;
+}
+
+.readLabel{
+    float: right;position: absolute;margin-top: 7rem;margin-right: -20rem;
+}
+
+.submitButton{
+    display: flex;justify-content: center;align-items: center;
+}

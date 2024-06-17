@@ -1,0 +1,246 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-dropdown {
+    margin-left: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.card-list {
+    // margin-top:60px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // // gap: 70px;
+    // row-gap: 50px;
+    // column-gap: 70px;
+    
+    margin-top: 5rem;
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content:space-evenly;//: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px 50px;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    padding: 15px 10px 5px 10px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background-color: #f6f2f2;
+}
+
+.card-content img {
+    
+    width: 15px;
+    height: 11px;
+    margin-bottom: 10px;
+}
+
+.contact-options button {
+    
+    cursor: pointer;
+
+}
+
+.question-input {
+    width: 70%;
+    padding: 15px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+
+.enter-button {
+    padding: 5px 40px 7px 40px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background: #3d3745;
+    color: white;
+    height: 2rem;
+    margin-top: 0.2rem;
+}
+
+
+.footer-span {
+    display: flex;
+    border: 1px solid;
+    border-radius: 25px;
+    width: 40rem;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    height: 2.5rem;
+}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 22px 0px 0px;
+    gap: 8px;
+}
+
+.icon-container-email {
+    position: relative;
+    width: 15px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 7px 10px 7px 10px;
+}
+
+.video-icon-email {
+
+    width: 20px;
+    height: 15px;
+    mask-size: contain;
+
+}
+
+.contact-btn {
+
+    
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin-left:-5px;
+    margin-top: -0.6rem;
+}
+
+.contact-btns {
+
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin-left:-11px;
+    margin-top: -0.6rem;
+}
+
+.contact-methods-images {
+
+    border: 1px solid;
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    padding: 7px 7px 7px 7px;
+
+}
+
+.icon-container {
+
+    position: relative;
+    width: 15px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 7px 10px 7px 10px;
+}
+
+.video-icon {
+
+    width: 20px;
+    height: 15px;
+    mask-size: contain;
+    margin-left: 12px;
+
+}
+
+.searchAstrologers-main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 36px 0px 0px;
+}
+
+.card-main-img{
+
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loopImg{
+
+    width: 100px;
+    height: 100px;
+}
+
+.card-details-section{
+
+    padding: 0px 20px 0px 0px;
+    text-align: start;
+    line-height: 0.7;
+}
+
+.astrologerName{
+
+    font-size: 20px;
+    font-weight: 450;
+}

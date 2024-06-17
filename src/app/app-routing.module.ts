@@ -5,16 +5,22 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SearchastrologersComponent } from './components/searchastrologers/searchastrologers.component';
+import { ClientComponent } from './components/client/client.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
   {
      path: 'home', component: HomeComponent ,
      children:[
       { path: 'contactus', component: ContactusComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'categories', component: CategoriesComponent },
-     
+      { path: 'astrologers', component: SearchastrologersComponent },
+      { path: 'client', component: ClientComponent }
+
     ]
   },
   // { path: 'contactus', component: ContactusComponent },

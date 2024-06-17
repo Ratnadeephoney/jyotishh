@@ -19,19 +19,18 @@
                 <div class="right-h">
                     <div class="rh">
                         <div class="nav-header">
-                            <div class="contactus" (click)="pageNavigation('/home/contactus')">Contact us</div>
-                            <div class="languages">
-                                <div class="popup" (click)="languagePopup()">Languages
-                                    <div class="popuptext" id="myPopup">
-                                        <div class="lnges" *ngFor="let lnge of ['English','Kannada','Telugu']"> {{lnge}}
-                                            <!-- <div class="lnge">
-                                                {{lnge}}
-                                            </div> -->
+                            <div  class="{{nav.class}}"  *ngFor="let nav of routeNav;let i=index">
+                                <div (click)="pageNavigation(nav.url)" *ngIf="nav.name != 'Languages' && nav.name != 'Login'">{{nav.name}}</div>
+                                <img (click)="pageNavigation(nav.url)" *ngIf="nav.name == 'Login'" class="client-profile" src="../../../assets/images/client-profile.png" />
+                                <div *ngIf="nav.name == 'Languages'">
+                                    <div class="popup" (click)="languagePopup()">Languages
+                                        <div class="popuptext" id="myPopup">
+                                            <div class="lnges" *ngFor="let lnge of ['English','Kannada','Telugu']"> {{lnge}}
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
+                                      </div>
+                                </div>
                             </div>
-                            <div class="login" (click)="pageNavigation('/login')">Login</div>
                         </div>
                     </div>
                 </div>

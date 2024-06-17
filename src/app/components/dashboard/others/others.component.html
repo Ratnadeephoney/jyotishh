@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+    <div class="otherQuestion">
+
+        <h2>Other question!</h2>
+
+    </div>
+
+    <div class="textareaSection">
+
+        <textarea maxlength="200" [(ngModel)]="question" placeholder="Write your question here"
+            class="textareaInput"></textarea>
+
+        <label class="readLabel">{{question.length}}/200</label>
+
+    </div>
+
+    <div class="submitButton">
+
+        <button class="enter-button" (click)="submitQuestion()">Submit</button>
+
+    </div>
+
+</div>

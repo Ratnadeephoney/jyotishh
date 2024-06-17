@@ -1,0 +1,92 @@
+<div class="searchAstrologers-main" >
+
+    <div>
+
+        <div class="search-div">
+
+            <span class="footer-span">
+
+                <input type="text" placeholder="Search by name, experience, language" class="question-input" />
+
+                <button class="enter-button">Search</button>
+
+            </span>
+
+        </div>
+
+        <div class="card-list">
+
+            <div class="card" *ngFor="let astrologer of astrologers">
+
+                <div class="card-content">
+
+                    <div class="card-section" >
+
+                        <div class="card-main-img" >
+
+                            <img [src]="astrologer.image" alt="{{astrologer.name}}" style="width: 100px;height: 100px;" >
+
+                        </div>
+
+                        <div class="card-details-section" >
+
+                            <p class="astrologerName">{{astrologer.name}}</p>
+
+                            <!-- <p>★★★★★</p> -->
+
+                            <img [src]="astrologer.stars" alt="{{astrologer.stars}}" style="width: 65px;height: 12px;">
+
+                            <p>{{astrologer.languages}}</p>
+
+                            <p>{{astrologer.experience}} Years of Experience</p>
+
+                        </div>
+
+                    </div>
+
+                    <div style="border-bottom: 1px solid;"></div>
+
+                    <div class="contact-options " style="display: flex;justify-content: center;align-items: center;">
+
+                        <div class="contact-methods">
+
+                            <div class="icon-container-email">
+
+                                <img src="assets/images/Astrology App-40.png" class="video-icon-email"
+                                    style="margin-left: 20px;">
+
+                            </div>
+
+                            <button class="contact-btn" style="border: none;"> Live Chat</button>
+
+                            <div class="icon-container-email">
+
+                                <img src="assets/images/Astrology App-41.png" class="video-icon-email"
+                                    style="margin-left: 13px;">
+
+                            </div>
+
+                            <button class="contact-btns" style="border: none;">Voice Call</button>
+
+                            <div class="icon-container">
+
+                                <img src="assets/images/Astrology App-42.png" class="video-icon"
+                                    style="margin-left: 18px;">
+
+                            </div>
+
+                            <button class="contact-btn" style="border: none;"> Video Call</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

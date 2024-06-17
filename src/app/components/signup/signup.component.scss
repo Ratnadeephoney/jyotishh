@@ -1,0 +1,190 @@
+.sigup-container{
+    width:100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    
+    .heading
+    {
+        width:100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        color:white;
+    }
+    .submit-button
+    {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button
+        {
+            width: 93%;
+            height: 40px;
+            background-color: #2b2a2a;
+            border: 2px solid #2b2a2a;
+            border-radius: 50px;
+            color: white;
+            font-size: 17px;
+        }
+    }
+    .di{
+        width:100%;
+        height:60px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mlr
+        {
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        .mrl
+        {
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+        input
+        {
+            width:89%;
+            height:30px;
+            background-color: white;
+            border-radius: 50px;
+            border: 2px solid white;
+            outline: none;
+            padding-left: 10px;
+        }
+    }
+    .si{
+        width:100%;
+        height:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input
+        {
+            width:89%;
+            height:30px;
+            background-color: white;
+            border-radius: 50px;
+            border: 2px solid white;
+            outline: none;
+            padding-left: 10px;
+        }
+    }
+    .client
+    {
+        width:100%;
+        height:100%;
+        // border:2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-image: url('../../../assets/images/login/login-right-bg.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        // filter: brightness(0.5);
+        .scc{
+            width:500px;
+            height:600px;
+            border:2px solid white;
+            border-radius: 20px;
+            background-color: transparent;
+            // position: relative;
+        }
+        .scc-forefround
+        {
+            // position: absolute;
+        }
+    }
+    .signup-background {
+        position: relative; /* Establish a positioning context for the pseudo-element */
+        // background-image: url('../../../assets/images/login/login-right-bg.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        background-size: cover;
+        /* background-color: green; Fallback background color */
+        // width: 100%;
+        // height: 100vh; /* Full viewport height */
+      }
+    .signup-bg-left
+    {
+        background-image: url('../../../assets/images/signup-bg-left.png')
+    }
+    .signup-bg-right
+    {
+        background-image: url('../../../assets/images/login/login-right-bg.png')
+    }
+      
+      .signup-background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the darkening effect */
+        pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+        z-index: 1;
+      }
+    //   .login-background {
+    //     position: relative; /* Establish a positioning context for the pseudo-element */
+    //     background: url("C:/sproudknowledge/react/react_javascript/node_20-1-11/seedknowledge/src/assets/images/springboot/step1stsprojectcreation.png") no-repeat center center;
+    //     background-size: cover;
+    //     /* background-color: green; Fallback background color */
+    //     width: 100%;
+    //     height: 100vh; /* Full viewport height */
+    //   }
+  
+    //   .login-background::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the darkening effect */
+    //     pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+    //     z-index: 1; /* Ensure the pseudo-element is on top */
+    //   }
+  
+      .child-content {
+        position: relative; /* Ensure child content is on top of the overlay */
+        z-index: 2; /* Ensure child content is above the pseudo-element */
+        color: white; /* Adjust the text color for better visibility */
+        padding: 20px; /* Add some padding */
+      }
+    .astrologer
+    {
+        width:100%;
+        height:100%;
+        // border:2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-image: url('../../../assets/images/login/login-right-bg.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        // filter: brightness(0.5);
+        .sca{
+            width:500px;
+            height:600px;
+            border:2px solid white;
+            border-radius: 20px;   
+            background-color: transparent;
+        }
+    }
+}

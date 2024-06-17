@@ -10,7 +10,13 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component'; // Import ReactiveFormsModule
 import { CommonModule } from '@angular/common';
-import { CategoriesComponent } from './components/categories/categories.component';  // Import CommonModule
+import { CategoriesComponent } from './components/categories/categories.component';
+import { SignupComponent } from './components/signup/signup.component';  // Import CommonModule
+import { SearchastrologersComponent } from './components/searchastrologers/searchastrologers.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OthersComponent } from './components/dashboard/others/others.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ClientComponent } from './components/client/client.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +25,14 @@ import { CategoriesComponent } from './components/categories/categories.componen
     HomeComponent,
     ContactusComponent,
     DashboardComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    SearchastrologersComponent,
+    SignupComponent,ClientComponent,
+    OthersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule,
+    AppRoutingModule,FormsModule,ReactiveFormsModule,  BrowserAnimationsModule,MatDialogModule
     // CommonModule 
   ],
   providers: [],

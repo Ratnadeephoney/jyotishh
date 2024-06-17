@@ -46,4 +46,12 @@ export class LoginComponent implements OnInit{
       console.log('Invalid form');
     }
   }
+
+  gotoSignUp()
+  {
+    let Jyotishhbody:any = document.getElementsByClassName('Jyotishh-body')
+    if(Jyotishhbody[0]){ Jyotishhbody[0].style = `overflow-x:hidden;`}
+    console.log("signup")
+    this.router.navigate(["/signup"]);
+  }
 }

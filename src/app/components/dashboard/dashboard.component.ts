@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router'
+import { OthersComponent } from './others/others.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -26,19 +28,30 @@ export class DashboardComponent implements OnInit{
     }
     
   ]
-  constructor(private route: ActivatedRoute, private router: Router)
+  constructor(private route: ActivatedRoute, private router: Router,private dialog: MatDialog)
   {
 
   }
   ngOnInit(): void {
     
   }
+  OtherspopUp(){
 
+    this.dialog.open(OthersComponent,{
+
+      width: '450px',
+      height : '300px',
+      panelClass : 'custom-dialog-container'
+      
+    });
+
+  }
 
   gotoCategory(ji:any)
   {
+    ji.name === 'Other' ? this.OtherspopUp() :this.router.navigate(["/home/categories"], {relativeTo:this.route,state:{"from-dshToedu":ji}});
     console.log("ji => ",ji.name)
-    this.router.navigate(["/home/categories"], {relativeTo:this.route,state:{"from-dshToedu":ji}});
+    
   }
 
 }

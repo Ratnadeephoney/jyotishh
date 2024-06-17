@@ -1,0 +1,130 @@
+<div class="logo-text">
+  <img width="60px" height="60px" src="assets/images/app-logo.png" />
+
+  <h1 class="client-reg">Client Requests</h1>
+</div>
+
+<div class="client-container">
+  <div *ngFor="let details of clientDetails">
+    <div class="box">
+      <div class="container">
+        <div class="request-box">
+          <div class="request-header">
+            <div>
+                <span>{{details.requested}}</span>
+
+            <span style="margin-left: 5.8rem;">{{details.day}}</span>
+            </div>
+            <div>
+                <!-- <span>{{details.requested}}</span> -->
+                <span style="margin-left: -40px;">{{details.appointmentDate}}</span>
+
+            </div>
+            
+          </div>
+
+          <img
+            [src]="details.clientImg"
+            alt="Client Image"
+            class="client-image"
+          />
+          <div class="request-body">
+            <h3>{{details.personName}}</h3>
+            <div class="details">
+              <div class="detail">
+                <p class="label">Zodiac</p>
+                <p class="value">{{details.Zodic}}</p>
+              </div>
+              <div class="detail">
+                <p class="label">DOB</p>
+                <p class="value">{{details.DOB}}</p>
+              </div>
+              <div class="detail">
+                <p class="label">Payment</p>
+                <p class="value">{{details.payment}}</p>
+              </div>
+            </div>
+            <p>
+              <strong>Question:</strong>{{details.question}}
+            </p>
+          </div>
+          <button class="request-button">{{details.status}}</button>
+        </div>
+      </div>
+
+      <!-- <div class="box1">
+        <div class="container">
+          <div class="request-box">
+            <div class="request-header">
+              <span>{{details.chatRequested}}</span>
+              <span>{{details.appointmentDate}}</span>
+            </div>
+            <img
+              [src]="details.clientImg"
+              alt="Client Image"
+              class="client-image"
+            />
+            <div class="request-body">
+              <h3>{{details.personName}}</h3>
+              <div class="details">
+                <div class="detail">
+                  <p class="label">Zodiac</p>
+                  <p class="value">{{details.Zodic}}</p>
+                </div>
+                <div class="detail">
+                  <p class="label">DOB</p>
+                  <p class="value">{{details.DOB}}</p>
+                </div>
+                <div class="detail">
+                  <p class="label">Payment</p>
+                  <p class="value">{{details.payment}}</p>
+                </div>
+              </div>
+              <p>
+                <strong>Question:</strong>{{details.question}}
+              </p>
+            </div>
+            <button class="request-button">{{details.status}}</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box1">
+        <div class="container">
+          <div class="request-box">
+            <div class="request-header">
+              <span>{{details.requested}}</span>
+              <span>{{details.appointmentDate}}</span>
+            </div>
+            <img
+              [src]="details.clientImg"
+              alt="Client Image"
+              class="client-image"
+            />
+            <div class="request-body">
+              <h3>{{details.personName}}</h3>
+              <div class="details">
+                <div class="detail">
+                  <p class="label">Zodiac</p>
+                  <p class="value">{{details.Zodic}}</p>
+                </div>
+                <div class="detail">
+                  <p class="label">DOB</p>
+                  <p class="value">{{details.DOB}}</p>
+                </div>
+                <div class="detail">
+                  <p class="label">Payment</p>
+                  <p class="value">{{details.payment}}</p>
+                </div>
+              </div>
+              <p>
+                <strong>Question:</strong>{{details.question}}
+              </p>
+            </div>
+            <button class="request-button">{{details.status}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
