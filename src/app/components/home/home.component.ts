@@ -8,7 +8,7 @@ import { ActivatedRoute, Router} from '@angular/router'
 export class HomeComponent implements OnInit {
 
   routeNav:any = [
-    {name:"Be an Astrologer",url:"/home/client",class:"client"},
+    {name:"Be an Client",url:"/home/client",class:"client"},
     {name:"Search Astrologers",url:"/home/astrologers",class:"astrologer"},
     {name:"Contact us",url:"/home/contactus",class:"contactus"},
     {name:"Languages",url:"/home/client",class:"languages"},
